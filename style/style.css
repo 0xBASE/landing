@@ -157,7 +157,7 @@ nav {
       color: #6869ec; }
       .hero .join input:hover, .hero .join input:focus {
         outline-color: #6869ec !important; }
-    .hero .join .successful {
+    .hero .join .successful, .hero .join .join-error {
       display: none;
       position: absolute;
       top: 0;
@@ -169,10 +169,17 @@ nav {
       background: #6869ec;
       text-transform: uppercase;
       color: white;
-      border-radius: 5px; }
+      border-radius: 5px;
+      text-align: center; }
+    .hero .join .join-error {
+      background: #f76f6f; }
     .hero .join.sent .successful {
       display: flex; }
     .hero .join.sent .form {
+      opacity: 0; }
+    .hero .join.error .join-error {
+      display: flex; }
+    .hero .join.error .form {
       opacity: 0; }
     .hero .join ::-webkit-input-placeholder {
       color: rgba(0, 0, 0, 0.2); }

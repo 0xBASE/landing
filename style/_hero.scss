@@ -116,7 +116,7 @@
             }
         }
 
-        .successful {
+        .successful, .join-error {
             display: none;
             position: absolute;
             top: 0;
@@ -129,10 +129,25 @@
             text-transform: uppercase;
             color: white;
             border-radius: 5px;
+            text-align: center;
+        }
+
+        .join-error {
+            background: #f76f6f;
         }
 
         &.sent{
             .successful {
+                display: flex;
+            }
+
+            .form{
+                opacity: 0;
+            }
+        }
+
+        &.error {
+            .join-error {
                 display: flex;
             }
 
