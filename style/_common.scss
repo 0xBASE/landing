@@ -5,6 +5,10 @@ body{
     margin: 0;
     color: $font-color;
     font-family: 'Rubik', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 section{

@@ -1,62 +1,9 @@
 .hero{
     overflow: hidden;
-    padding-top: 90px;
     padding-bottom: 0;
-    height: 100vh;
-
-    .pop-1{
-        position: absolute;
-        top: 10vh;
-        right: -15vw;
-    
-        height: 80vh;
-        width: 40vw;
-        background: linear-gradient(-45deg, $gradient1 -20%, $gradient2 100%);
-        transform: skewY(30deg);
-        border-radius: 70px;
-        z-index: 1;
-    }
-
-    .pop-2{
-        position: absolute;
-        bottom: 0;
-        left: -15vw;
-    
-        height: 50vh;
-        width: 25vw;
-        background: linear-gradient(45deg, $gradient1 -50%, $gradient2 100%);
-        transform: skewY(-30deg);
-        border-radius: 70px;
-        z-index: 1;
-    }
-
-    .pop-3{
-        position: absolute;
-        top: 10vh;
-        right: -5vw;
-        opacity: 0.1;
-    
-        height: 80vh;
-        width: 40vw;
-        background: linear-gradient(-45deg, $gradient1 -20%, $gradient2 100%);
-        transform: skewY(30deg);
-        border-radius: 70px;
-        z-index: 1;
-    }
-
-    .pop-4{
-        position: absolute;
-        bottom: 0;
-        left: -5vw;
-        opacity: 0.1;
-    
-        height: 50vh;
-        width: 25vw;
-        background: linear-gradient(45deg, $gradient1 -50%, $gradient2 100%);
-        transform: skewY(-30deg);
-        border-radius: 70px;
-        z-index: 1;
-    }
+    height: 100%;
+    padding-top: 0;
+    flex-grow: 1;
 
     h1 {
         color: $font-color;
