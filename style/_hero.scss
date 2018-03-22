@@ -149,13 +149,15 @@
 
         a {
             display: inline-block;
-            height: 32px;
-            width: 32px;
             margin-right: 10px;
+            height: 25px;
+            width: 25px;
 
             svg{
                 fill: $font-color;
                 transition: all 0.3s ease;   
+                height: 25px;
+                width: 25px;
             }
 
             &:hover{
