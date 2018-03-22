@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -10,6 +10,7 @@ nav {
         display: flex;
         align-items: center;
         // background: #ffffff;
+        justify-content: center;
         border-radius: 10px;
         margin: -20px;
         padding: 20px;
@@ -28,9 +29,28 @@ nav {
             padding: 0 10px;
             line-height: 80px;
             font-weight: 500;
+            color: $font-color;
+
+            &:hover{
+                text-decoration: none;
+                color: $base-color;
+            }
 
             &.language {
                 color: $base-color;
+            }
+
+            &.btn-primary{
+                background: $base-color;
+                border: 0 none;
+                color: white;
+                padding: 15px 20px;
+                line-height: 1;
+                transition: all 1s ease;
+
+                &:hover{
+                    background: #689ef1;
+                }
             }
         }
     }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>0xBASE</title>
     <meta name="Description" content="First mobile dApp infrastructure for the devices of today and the token economies of tomorrow.">
@@ -29,7 +29,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
@@ -39,8 +39,9 @@
         <div class="container">
             <div class="nav-wrapper">
                 <img class="logo" src="assets/logo.png" />
-                <div class="links">
-                    <!-- <a>Whitepaper</a> -->
+                <div class="links d-none d-md-block d-xl-block">
+                    <a href="assets/files/lightpaper.pdf" target="_blank">Lightpaper</a>
+                    <a href="assets/files/whitepaper.pdf" target="_blank" class="btn btn-primary">Whitepaper</a>
                 </div>
             </div>
         </div>
@@ -58,15 +59,60 @@
                     <div class="col-md-5">
                         <h1>First mobile dApp infrastructure for the devices of today and the token economies of tomorrow.</h1>
                         <p>Bridging the gap between decentralized applications and the mobile world</p>
+                        
+                        <div class="social">
+                            <a href="https://www.linkedin.com/company/0xbase/" target="_blank" title="LinkedIn">
+                                <svg class="linkedin" width="32" height="32">
+                                    <path d="M27.263 27.269h-4.739v-7.425c0-1.771-0.036-4.049-2.469-4.049-2.471 0-2.848 1.927-2.848 3.919v7.556h-4.739v-15.269h4.552v2.081h0.061c0.636-1.2 2.183-2.467 4.493-2.467 4.801 0 5.689 3.16 5.689 7.273v8.381zM7.116 9.911c-1.525 0-2.751-1.235-2.751-2.753 0-1.517 1.227-2.751 2.751-2.751 1.52 0 2.752 1.233 2.752 2.751 0 1.519-1.233 2.753-2.752 2.753zM9.492 27.269h-4.752v-15.269h4.752v15.269zM29.633 0h-27.272c-1.305 0-2.361 1.032-2.361 2.305v27.389c0 1.275 1.056 2.305 2.361 2.305h27.268c1.304 0 2.371-1.031 2.371-2.305v-27.389c0-1.273-1.067-2.305-2.371-2.305h0.004z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="https://www.facebook.com/0xbase/" target="_blank" title="Facebook">
+                                <svg class="facebook" width="32" height="32">
+                                    <path d="M30.235 0h-28.469c-0.975 0-1.765 0.791-1.765 1.765v28.469c0 0.976 0.791 1.765 1.765 1.765h15.325v-12.392h-4.172v-4.828h4.172v-3.567c0-4.132 2.525-6.38 6.212-6.38 1.767 0 3.285 0.129 3.728 0.188v4.32h-2.561c-2 0-2.389 0.961-2.389 2.361v3.081h4.779l-0.62 4.84h-4.159v12.376h8.153c0.977 0 1.767-0.789 1.767-1.765v-28.469c0-0.975-0.789-1.765-1.765-1.765z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="https://twitter.com/0xbasecom" target="_blank" title="Twitter">
+                                <svg class="twitter" width="32" height="32">
+                                    <path d="M31.939 6.092c-1.18 0.519-2.44 0.872-3.767 1.033 1.352-0.815 2.392-2.099 2.884-3.631-1.268 0.74-2.673 1.279-4.169 1.579-1.195-1.279-2.897-2.079-4.788-2.079-3.623 0-6.56 2.937-6.56 6.556 0 0.52 0.060 1.020 0.169 1.499-5.453-0.257-10.287-2.876-13.521-6.835-0.569 0.963-0.888 2.081-0.888 3.3 0 2.28 1.16 4.284 2.917 5.461-1.076-0.035-2.088-0.331-2.971-0.821v0.081c0 3.18 2.257 5.832 5.261 6.436-0.551 0.148-1.132 0.228-1.728 0.228-0.419 0-0.82-0.040-1.221-0.115 0.841 2.604 3.26 4.503 6.139 4.556-2.24 1.759-5.079 2.807-8.136 2.807-0.52 0-1.039-0.031-1.56-0.089 2.919 1.859 6.357 2.945 10.076 2.945 12.072 0 18.665-9.995 18.665-18.648 0-0.279 0-0.56-0.020-0.84 1.281-0.919 2.4-2.080 3.28-3.397l-0.063-0.027z"></path>
+                                </svg>
+                            </a>
+
+                            <!--
+                            <a href="#" target="_blank" title="Telegram">
+                                <svg class="telegram" width="32" height="32">
+                                    <path d="M12.037 27.783c-0.952 0-0.791-0.361-1.119-1.265l-2.804-9.227 21.569-12.797z"></path>
+                                    <path d="M12.037 27.783c0.736 0 1.060-0.336 1.473-0.737l3.921-3.809-4.895-2.952z"></path>
+                                    <path d="M12.537 20.284l11.853 8.757c1.353 0.747 2.331 0.361 2.667-1.256l4.827-22.737c0.496-1.983-0.752-2.879-2.045-2.293l-28.339 10.929c-1.933 0.776-1.924 1.856-0.352 2.337l7.273 2.267 16.832-10.617c0.793-0.48 1.524-0.223 0.925 0.309z"></path>
+                                </svg>
+                            </a>
+
+                            <a href="#" target="_blank" title="Medium">
+                                <svg class="medium" width="32" height="32">
+                                    <path d="M10.661 7.518v20.946c0 0.554-0.268 1.071-0.875 1.071-0.214 0-0.411-0.054-0.589-0.143l-8.304-4.161c-0.5-0.25-0.893-0.893-0.893-1.429v-20.357c0-0.446 0.214-0.857 0.696-0.857 0.286 0 0.536 0.143 0.786 0.268l9.125 4.571c0.018 0.018 0.054 0.071 0.054 0.089zM11.804 9.321l9.536 15.464-9.536-4.75v-10.714zM32 9.643v18.821c0 0.589-0.339 1-0.929 1-0.304 0-0.589-0.089-0.839-0.232l-7.875-3.929zM31.946 7.5c0 0.071-9.232 15.054-9.946 16.196l-6.964-11.321 5.786-9.411c0.196-0.321 0.554-0.5 0.929-0.5 0.161 0 0.321 0.036 0.464 0.107l9.661 4.821c0.036 0.018 0.071 0.054 0.071 0.107z"></path>
+                                </svg>
+                            </a>
+                            -->
+                        </div>
+
+
                         <form class="join" id="join-community">
                             <div class="form">
                                 <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Enter your email" required/>
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0a96690fa626677a72de0139e_e91a754e09" tabindex="-1" value=""></div>
-                                <button type="submit">Join the community</button>
+                                <button type="submit" class="d-none d-sm-block">Join the community</button>
+                                <button type="submit" class="d-block d-sm-none">Join</button>
                             </div>
                             <div class="successful">Welcome to the community!</div>
                             <div class="join-error"></div>
                         </form>
+
+
+                        <div class="buttons d-block d-lg-none d-md-none">
+                            <a href="assets/files/whitepaper.pdf" target="_blank" class="btn btn-primary">Whitepaper</a>
+                            <a href="assets/files/lightpaper.pdf" target="_blank" class="btn btn-default">Lightpaper</a>
+                        </div>
                     </div>
 
                     <div class="col-md-7 d-none d-md-block d-xs-none">
