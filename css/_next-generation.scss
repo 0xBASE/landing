@@ -1,0 +1,153 @@
+#next-generation{
+    background: url("../assets/images/logo-bg-bw.png") center top no-repeat;
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+
+    .network{
+        .wrapper{
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .box {
+            position: relative;
+            display: flex;
+            margin-bottom: 0.8rem;
+            width: 100%;
+            
+            .content{
+                width: 100%;
+                background: white;
+                text-align: center;
+                border: 1px solid #cfe1f0;
+                border-radius: $border-radius;
+                padding: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+                z-index: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .bg{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                bottom: 0px;
+                background: $gradient;
+                border-radius: $border-radius;
+                opacity: 0.2;
+                z-index: 1;
+                transition: all 0.2s;
+            }
+
+            &.active, &:hover{
+                .content{
+                    border-color: #92b1cc;
+                    //background: $gradient;
+                    //color: white;
+                    font-weight: bold;
+                }
+
+                .bg{
+                    left: -8px;
+                    bottom: -8px;
+                }
+            }
+        }
+
+        .flex{
+            display: flex;
+
+            .wrapper{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .row {
+            margin-left: -0.8rem;
+            margin-right: -0.8rem;
+
+            .col, .col-8, .col-4, .col-12 {
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+            }
+        }
+    }
+
+
+    .network-texts{
+        .description{
+            padding: 0 2rem;
+
+            &.visible{
+                display: block;
+            }
+
+            h2{
+                position: relative;
+                text-align: left;
+                font-weight: bold;
+                font-size: 1.4em;
+                margin-bottom: 0px;
+
+                &:before{
+                    content: " ";
+                    position: absolute;
+                    top: 14px;
+                    left: -2rem;
+                    height: 2px;
+                    width: 1rem;
+                    background: $base-color;
+                }
+            }
+
+            h3{
+                font-size: 0.9em;
+                color: $base-color;
+                margin-bottom: 1.2rem;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
+
+            p{
+                color: #010101;
+                font-size: 0.8em;
+                letter-spacing: 1px;
+                font-weight: 600;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width : 768px) {
+        .network{
+            margin-bottom: 2rem;
+
+            .box {
+                margin-bottom: 0.4rem;
+            }
+
+            .row {
+                margin-left: -0.4rem;
+                margin-right: -0.4rem;
+    
+                .col, .col-8, .col-4, .col-12 {
+                    padding-left: 0.2rem;
+                    padding-right: 0.2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+$nav-height: 90px;
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2rem;
+    z-index: 100000000000;
+
+    .brand{
+        img {
+            height: 60px;
+        }
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .links {
+        a {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: $font-color;
+            padding: 1rem;
+
+            &.languages {
+                font-weight: normal;
+            }
+            
+            &:hover {
+                text-decoration: none;
+                color: $base-color;
+            }
+
+            &.active {
+                color: $base-color;
+            }
+        }
+
+        .close{
+            display: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000000;
+            padding: 1rem;
+        }
+    }
+
+
+    @media only screen and (max-width : 768px) {
+        .container{
+            .row{
+                margin: 0 1rem;
+            }
+        }
+        
+
+        .burger{
+            display: block;
+        }
+
+        .links{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+
+            .close{
+                display: block;
+            }
+
+            display: none;
+            flex-direction: column;
+            text-align: right;
+
+            &.open{
+                display: flex;
+            }
+        }
+    }
+
+}

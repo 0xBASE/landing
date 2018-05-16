@@ -1,0 +1,52 @@
+#use-cases{
+    background: black url("../assets/images/logo-bg-2.png") right -100px no-repeat;
+    color: white;
+    position: relative;
+
+    h1{
+        span{
+            font-weight: 100;
+        }
+    }
+
+    .phone{
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        height: 500px;
+        user-select: none;
+    }
+
+    .slider{
+        display: flex;
+        align-items: center;
+
+        .left, .right{
+            width: 60px;
+            flex-shrink: 0;
+            opacity: 0.2;
+            cursor: pointer;
+            transition: opacity 0.3s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .right{
+            transform: rotateZ(180deg);
+        }
+
+        .content{
+            padding: 0 2rem;
+            flex-grow: 1;
+            font-size: 1.6em;
+            text-align: center;
+            overflow: hidden;
+
+            .cases-content{
+                width: 100%;
+            }
+        }
+    }
+}

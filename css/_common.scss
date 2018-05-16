@@ -1,0 +1,140 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    h1 {
+        font-size: 2.2em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 1.2em;
+        color: $base-color;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .number{
+        color: $base-color-2;
+        padding-top: 3rem;
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+
+.seperator {
+    height: 23px;
+    margin-bottom: 1.8rem;
+    text-align: center;
+
+    img{
+        height: 100%;
+    }
+}
+
+
+.seperator-logo {
+    height: 30px;
+    margin-bottom: 1.8rem;
+    text-align: center;
+
+    img{
+        height: 100%;
+        transition: all 1s;
+
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+.seperator-logo-black {
+    height: 36px;
+    margin-bottom: 1.8rem;
+    text-align: center;
+
+    .line {
+        height: 2px;
+        width: 100%;
+        background: black;
+    }
+
+    .circle {
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        background: black;
+
+        img{
+            height: 30px;
+            width: 30px;
+            margin-top: 3px;
+            transition: all 1s;
+
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+
+.wrapper {
+    position: relative;
+    text-align: center;
+    border: 1px solid #cfe1f0;
+    border-radius: $border-radius;
+    padding: 2rem;
+    background: white;
+    transition: all 0.2s;
+
+    &::after{
+        z-index: -1;
+        content: " ";
+        position: absolute;
+        border-radius: $border-radius;
+        bottom: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: $gradient;
+        opacity: 0.2;
+        transition: all 0.2s;
+    }
+
+    &.active, &:hover{
+        border-color: #92b1cc;
+        &::after{
+            bottom: -10px;
+            left: -10px;
+        }
+    }
+}
+
+
+.snack-container{
+    left: 50% !important;
+    transform: translate(-50%, 0%);
+    opacity: 0.8;
+
+    .snack {
+        border-radius: $border-radius;
+        padding: 1rem 2rem !important;
+        line-height: 1;
+        text-align: center;
+        min-width: auto;
+    }
+}

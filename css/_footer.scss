@@ -1,0 +1,76 @@
+#footer {
+    padding-top: 7rem;
+    color: white;
+    background: #000 url("../assets/images/logo-bg.png") center -190px no-repeat;
+
+    h2 {
+        color: white;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .form-control{
+        color: white;
+        border-color: white;
+        
+        &::-webkit-input-placeholder { color: white; font-weight: 600; }
+        &::-moz-placeholder { color: white; font-weight: 600; }
+        &:-ms-input-placeholder { color: white; font-weight: 600; }
+        &:-moz-placeholder { color: white; font-weight: 600; }
+
+        &:focus{
+            background: transparent;
+        }
+    }
+
+
+    .social{
+        margin-top: 1rem;
+        text-align: center;
+
+        a{
+            &:hover{
+                text-transform: none;
+                text-decoration: none;
+            }
+        }
+        
+        svg{
+            margin-left: 0.5rem;
+            opacity: 0.5;
+            height: 25px;
+            fill: white;
+            transition: opacity 0.3s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+
+    footer {
+        padding-top: 12rem;
+        font-size: 0.8em;
+        color: #595959;
+        font-weight: 600;
+
+        a {
+            color: $base-color-2;
+        }
+
+        .dot{
+            padding: 0 0.6rem;
+        }
+
+        .reach-out {
+            text-align: center;
+            font-size: 1.3em;
+
+            a {
+                border-bottom: 2px solid $base-color-2;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}

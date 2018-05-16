@@ -1,0 +1,32 @@
+#hero {
+    background: url("../assets/images/logo-bg.png") center -50px no-repeat;
+    padding: 15rem 0 10rem 0;
+
+    h2 {
+        padding: 2.5rem 0;
+    }
+
+    .social{
+        margin-top: 1rem;
+        text-align: center;
+
+        a{
+            &:hover{
+                text-transform: none;
+                text-decoration: none;
+            }
+        }
+        
+        svg{
+            margin-left: 0.5rem;
+            opacity: 0.5;
+            height: 25px;
+            fill: $base-color-2;
+            transition: opacity 0.3s;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
