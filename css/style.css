@@ -155,7 +155,7 @@ nav {
       top: 0;
       left: 0;
       width: 100%;
-      background: white;
+      background: rgba(255, 255, 255, 0.8);
       display: none;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
